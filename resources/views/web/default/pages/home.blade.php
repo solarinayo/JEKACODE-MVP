@@ -156,7 +156,7 @@
                 </div>
             </section>
         @endif
-
+<!----
         @if($homeSection->name == \App\Models\HomeSection::$latest_bundles and !empty($latestBundles) and !$latestBundles->isEmpty())
             <section class="home-sections home-sections-swiper container">
                 <div class="d-flex justify-content-between ">
@@ -186,6 +186,8 @@
                 </div>
             </section>
         @endif
+
+       
 
         {{-- Upcoming Course --}}
         @if($homeSection->name == \App\Models\HomeSection::$upcoming_courses and !empty($upcomingCourses) and !$upcomingCourses->isEmpty())
@@ -885,6 +887,8 @@
             </section>
         @endif
 
+     
+
         @if($homeSection->name == \App\Models\HomeSection::$blog and !empty($blog) and !$blog->isEmpty())
             <section class="home-sections container">
                 <div class="d-flex justify-content-between">
@@ -907,9 +911,11 @@
                 </div>
             </section>
         @endif
-
+----->
     @endforeach
 @endsection
+
+
 
 @push('scripts_bottom')
     <script src="/assets/default/vendors/swiper/swiper-bundle.min.js"></script>
