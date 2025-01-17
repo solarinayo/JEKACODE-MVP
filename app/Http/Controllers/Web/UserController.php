@@ -84,7 +84,7 @@ class UserController extends Controller
                 $installments = $installmentPlans->getPlans('meetings', null, null, null, $user->id);
             }*/
 
-            /* Cashback Rules */
+            /* Cashback Rules -- */
             if (getFeaturesSettings('cashback_active') and (empty($authUser) or !$authUser->disable_cashback)) {
                 $cashbackRulesMixin = new CashbackRules($authUser);
                 $cashbackRules = $cashbackRulesMixin->getRules('meetings', null, null, null, $user->id);
