@@ -10,8 +10,9 @@ use App\User;
 use Illuminate\Http\Request;
 
 class SearchController extends Controller
-{
-    public functionv index(Request $request)
+{ 
+    
+    public function index (Request $request)
     {
         $data = [];
 
